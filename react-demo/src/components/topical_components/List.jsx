@@ -8,6 +8,11 @@ import { info } from '../../data/custInfo';
 
 const numbers = [1, 2, 3, 4, 5];
 const customersInfo = info;
+const users = [
+  {id: 1, name: 'Alice', age: 30, occupation: 'Engineer'},
+  {id: 2, name: 'Bob', age: 25, occupation: 'Designer'},
+  {id: 3, name: 'Charlie', age: 35, occupation: 'Teacher'},
+]
 // .map(cust => cust.first_name + " " + cust.last_name);
 console.log(customersInfo);
 
@@ -36,6 +41,13 @@ const List = () => {
             </ul>
         </div>
       )) }
+      {users.map(({id, name, age, occupation}) => (
+        <div key={id} style={{marginBottom: '20px', padding: '10px', border: '1px solid #ccc'}}>
+            <h3>{name}</h3>
+            <p><strong>Age:</strong> {age}</p>
+            <p><strong>Occupation:</strong> {occupation}</p>
+        </div>
+      )) }  
     </div>
   )
 }
