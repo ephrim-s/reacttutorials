@@ -11,7 +11,7 @@ const ProductInfo = () => {
   return (
     <div>
       <h1>Name: {product.name}</h1>
-      <h3>Price: {product.price}</h3>
+      <h3>Price: ${product.price}</h3>
       <h3>availablity: {product.availablity}</h3>
     </div>
   )
