@@ -16,7 +16,7 @@ const List = () => {
     <div>
       {numbers.map(number => (
         <ul key={number}>
-            <li>{number}</li>
+            <li>{number}</li>-
         </ul>
       )) }
       {customersInfo.map(cust => (
