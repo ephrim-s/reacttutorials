@@ -1,7 +1,7 @@
 import React from 'react';
 import Greet from './components/Greet';
 import ProductInfo from './components/ProductInfo';
-import List from './components/topical_components/List1';
+import List from './components/topical_components/List';
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <Greet />
       <ProductInfo />
       <List />
+      
     </div>
   )
 }

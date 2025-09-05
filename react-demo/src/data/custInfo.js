@@ -1,4 +1,4 @@
-[
+export const info = [
   {
     "customer_id": "CUST001",
     "first_name": "Alice",
