@@ -13,6 +13,7 @@ const users = [
   {id: 2, name: 'Bob', age: 25, occupation: 'Designer'},
   {id: 3, name: 'Charlie', age: 35, occupation: 'Teacher'},
 ]
+
 // .map(cust => cust.first_name + " " + cust.last_name);
 console.log(customersInfo);
 
@@ -48,6 +49,7 @@ const List = () => {
             <p><strong>Occupation:</strong> {occupation}</p>
         </div>
       )) }  
+
     </div>
   )
 }

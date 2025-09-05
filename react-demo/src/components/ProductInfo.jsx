@@ -2,17 +2,24 @@ import React from 'react';
 
 const ProductInfo = () => {
 
-    const product = {
-        name: 'Laptop',
-        price: 1200,
-        availablity: "In Stock",
-    };
+    const products = [
+      {id: 1, name: "Phone", price: 699, availablity: 'In Stock'},
+      {id: 2, name: "Laptop", price: 999, availablity: 'In Stock'},
+      {id: 3, name: "Tablet", price: 499, availablity: 'In Stock'},
+      {id: 4, name: "Smartwatch", price: 199, availablity: 'Out of Stock'},
+      {id: 5, name: "Headphones", price: 149, availablity: 'In Stock'},  
+  ];
 
   return (
     <div>
-      <h1>Name: {product.name}</h1>
-      <h3>Price: ${product.price}</h3>
-      <h3>availablity: {product.availablity}</h3>
+      {products.map(({id, name, price, availablity}) => (
+        <div key={id} style={{marginBottom: '20px', padding: '10px', border: '3px solid #8a4242ff'}}>
+            <h3>{name}</h3>
+            <p><strong>Price:</strong> ${price}</p>
+            <p><strong>Availability:</strong> {availablity}</p>
+        </div>
+      )) };
+      
     </div>
   )
 }
