@@ -44,3 +44,10 @@ export const info = [
     }
   }
 ]
+
+export const productsInfo = [
+{id: 1, name: "Choclate", price: 10},
+{id: 2, name: "Cabbage", price: 30}
+]
+
+export const personDetail = {name: "samuel", age: 35}
